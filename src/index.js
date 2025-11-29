@@ -76,3 +76,15 @@ console.log(button3)
 
 
 
+productArray.forEach((p) =>{
+
+    const button = p.querySelector("button");
+
+    button.addEventListener('click', () =>{
+
+        const h5 = document.createElement('h5');
+        h5.innerText = p.firstElementChild.innerText;
+
+        cart.appendChild(h5);
+    });
+});
